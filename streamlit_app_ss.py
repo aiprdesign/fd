@@ -27,7 +27,7 @@ if USE_SS:
 st.title("OpenCV Deep Learning based Face Detection")
 img_file_buffer = st.file_uploader("Choose a file", type=['jpg', 'jpeg', 'png'])
 
-# Function for detecting facses in an image.
+# Function for detecting faces in an image.
 def detectFaceOpenCVDnn(net, frame):
     # Create a blob from the image and apply some pre-processing.
     blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300), [104, 117, 123], False, False)
